@@ -2,7 +2,7 @@
 from pyrogram.types import (InlineKeyboardButton, InlineKeyboardMarkup,ForceReply)
 from pyrogram import Client , filters
 
-@Client.on_callback_query(filters.regex('gdrsyne'))
+@Client.on_callback_query(filters.regex('32jlt4'))
 async def upgrade(bot,update):
 	text = """ **🏷 ᴘʟᴀɴ** :- ```Silver 🥈```
 
@@ -20,7 +20,7 @@ async def upgrade(bot,update):
 	await update.message.edit(text = text,reply_markup = keybord)
 	
 
-@Client.on_message(filters.private & filters.command(["gdrsyne"]))
+@Client.on_message(filters.private & filters.command(["32jlt4"]))
 async def upgradecm(bot,message):
 	text = """ **🏷 ᴘʟᴀɴ** :- ```Silver 🥈```
 

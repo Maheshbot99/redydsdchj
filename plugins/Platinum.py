@@ -2,11 +2,11 @@
 from pyrogram.types import (InlineKeyboardButton, InlineKeyboardMarkup,ForceReply)
 from pyrogram import Client , filters
 
-@Client.on_callback_query(filters.regex('zdogrocky'))
+@Client.on_callback_query(filters.regex('gdrsyne'))
 async def upgrade(bot,update):
 	text = """ **🏷 ᴘʟᴀɴ** :- ```Silver 🥈```
 
-**⌾ ᴅᴀɪʟʏ ᴜᴘʟᴏᴀᴅ** :- ```10.0 GB```
+**⌾ ᴅᴀɪʟʏ ᴜᴘʟᴏᴀᴅ** :- ```100.0 GB```
 **⌾ ᴛɪᴍᴇ ɢᴀᴘ** :- ```0 minutes```
 **⌾ 4ɢʙ sᴜᴘᴘᴏʀᴛ** :- ```False```
 **⌾ ᴘᴀʀᴀʟʟᴇʟ ᴘʀᴏᴄᴇss** :- ```3```
@@ -20,11 +20,11 @@ async def upgrade(bot,update):
 	await update.message.edit(text = text,reply_markup = keybord)
 	
 
-@Client.on_message(filters.private & filters.command(["zdogrocky"]))
+@Client.on_message(filters.private & filters.command(["gdrsyne"]))
 async def upgradecm(bot,message):
 	text = """ **🏷 ᴘʟᴀɴ** :- ```Silver 🥈```
 
-**⌾ ᴅᴀɪʟʏ ᴜᴘʟᴏᴀᴅ** :- ```10.0 GB```
+**⌾ ᴅᴀɪʟʏ ᴜᴘʟᴏᴀᴅ** :- ```100.0 GB```
 **⌾ ᴛɪᴍᴇ ɢᴀᴘ** :- ```0 minutes```
 **⌾ 4ɢʙ sᴜᴘᴘᴏʀᴛ** :- ```False```
 **⌾ ᴘᴀʀᴀʟʟᴇʟ ᴘʀᴏᴄᴇss** :- ```3```

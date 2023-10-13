@@ -45,15 +45,14 @@ async def start(client, message):
     try:
         id = message.text.split(' ')[1]
     except:
-        txt=f"""Hello {message.from_user.first_name } \n\nI am file renamer bot, Please sent any telegram **Document Or Video** and enter new filename to rename it"""
+        txt=f"""**ʜᴇʟʟᴏ - {message.from_user.mention} , \nɪ  ᴀᴍ  ᴀɴ  ᴀᴅᴠᴀɴᴄᴇ  ꜰɪʟᴇ  ʀᴇɴᴀᴍᴇʀ  ᴀɴᴅ  ᴄᴏɴᴠᴇʀᴛᴇʀ  ʙᴏᴛ  ᴡɪᴛʜ  ᴘᴇʀᴍᴀɴᴇɴᴛ  ᴀɴᴅ  ᴄᴜsᴛᴏᴍ  ᴛʜᴜᴍʙɴᴀɪʟ  sᴜᴘᴘᴏʀᴛ. \n\nᴊᴜsᴛ  sᴇɴᴅ  ᴍᴇ  ᴀɴʏ  ᴠɪᴅᴇᴏ  ᴏʀ ᴅᴏᴄᴜᴍᴇɴᴛ !!**"""
         await message.reply_photo(photo=LAZY_PIC,
                                 caption=txt,
                                 reply_markup=InlineKeyboardMarkup(
-                                      [[InlineKeyboardButton("🎀 Movies Channel 🎀", url="https://t.me/Movie_Flix_Zone")],
-                                      [InlineKeyboardButton("🦋 Update Channel 🦋", url="https://t.me/Hpbot_update")],
-                                      [InlineKeyboardButton("Support Chat", url='https://t.me/HP_Bot_discuss_group'),
-                                      InlineKeyboardButton(" Subscribe Us ", url='https://youtube.com/@TechnicalHPgamer')],
-                                      [InlineKeyboardButton("🥺 Donate 🥺", url='https://graph.org/file/31706dbeac09ceb90f8cd.jpg')]
+                                      [[InlineKeyboardButton("ᴩʀᴇᴍɪᴜᴍ ᴩʟᴀɴꜱ",callback_data = "upgrade")],
+                                      [InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url='https://t.me/CrazyXBoTs'),
+                                      InlineKeyboardButton("ᴄᴏɴᴛᴀᴄᴛ ᴜꜱ", url='https://t.me/CrazyXBoTsBot?start')],
+                                      [InlineKeyboardButton("• ʜᴇʟᴩ •",callback_data = "help")]
                                       ]))
         return
     if id:
@@ -63,11 +62,10 @@ async def start(client, message):
                 await message.reply_photo(photo=LAZY_PIC,
                                          caption=txt,
                                          reply_markup=InlineKeyboardMarkup(
-                                             [[InlineKeyboardButton("🎀 Movies Channel 🎀", url="https://t.me/Movie_Flix_Zone")],
-                                      [InlineKeyboardButton("🦋 Update Channel 🦋", url="https://t.me/Hpbot_update")],
-                                      [InlineKeyboardButton("Support Chat", url='https://t.me/HP_Bot_discuss_group'),
-                                      InlineKeyboardButton(" Subscribe Us ", url='https://youtube.com/@TechnicalHPgamer')],
-                                      [InlineKeyboardButton("🥺 Donate 🥺", url='https://graph.org/file/31706dbeac09ceb90f8cd.jpg')]
+                                             [[InlineKeyboardButton("ᴩʀᴇᴍɪᴜᴍ ᴩʟᴀɴꜱ",callback_data = "upgrade")],
+                                              [InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url='https://t.me/CrazyXBoTs'),
+                                             InlineKeyboardButton("ᴄᴏɴᴛᴀᴄᴛ ᴜꜱ", url='https://t.me/CrazyXBoTsBot?start')],
+                                             [InlineKeyboardButton("• ʜᴇʟᴩ •",callback_data = "help")]
                                           ]))
             except:
                 return
@@ -77,15 +75,14 @@ async def start(client, message):
             limit = _user_["uploadlimit"]
             new_limit = limit + 2147483652
             uploadlimit(int(id), new_limit)
-            await message.reply_text(text=f"""
-	Hello {message.from_user.first_name }\n\nI am file renamer bot, Please send any telegram **Document Or Video** and enter new filename to rename it__
+            await message.reply_text(text=f"""**
+	ʜᴇʟʟᴏ - {message.from_user.mention} , \nɪ  ᴀᴍ  ᴀɴ  ᴀᴅᴠᴀɴᴄᴇ  ꜰɪʟᴇ  ʀᴇɴᴀᴍᴇʀ  ᴀɴᴅ  ᴄᴏɴᴠᴇʀᴛᴇʀ  ʙᴏᴛ  ᴡɪᴛʜ  ᴘᴇʀᴍᴀɴᴇɴᴛ  ᴀɴᴅ  ᴄᴜsᴛᴏᴍ  ᴛʜᴜᴍʙɴᴀɪʟ  sᴜᴘᴘᴏʀᴛ. \n\nᴊᴜsᴛ  sᴇɴᴅ  ᴍᴇ  ᴀɴʏ  ᴠɪᴅᴇᴏ  ᴏʀ ᴅᴏᴄᴜᴍᴇɴᴛ !!**
 	""", reply_to_message_id=message.id,
                                      reply_markup=InlineKeyboardMarkup(
-                                         [[InlineKeyboardButton("🎀 Movies Channel 🎀", url="https://t.me/Movie_Flix_Zone")],
-                                      [InlineKeyboardButton("🦋 Update Channel 🦋", url="https://t.me/Hpbot_update")],
-                                      [InlineKeyboardButton("Support Chat", url='https://t.me/HP_Bot_discuss_group'),
-                                      InlineKeyboardButton(" Subscribe Us ", url='https://youtube.com/@TechnicalHPgamer')],
-                                      [InlineKeyboardButton("🥺 Donate 🥺", url='https://graph.org/file/31706dbeac09ceb90f8cd.jpg')]
+                                         [[InlineKeyboardButton("ᴩʀᴇᴍɪᴜᴍ ᴩʟᴀɴꜱ",callback_data = "upgrade")],
+                                          [InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url='https://t.me/CrazyXBoTs'),
+                                          InlineKeyboardButton("ᴄᴏɴᴛᴀᴄᴛ ᴜꜱ", url='https://t.me/CrazyXBoTsBot?start')],
+                                          [InlineKeyboardButton("• ʜᴇʟᴩ •",callback_data = "help")]
                                           ]))
     
 
@@ -121,13 +118,12 @@ async def send_doc(client, message):
         daily = user_deta["daily"]
         user_type = user_deta["usertype"]
     except:
-        await message.reply_text(text=f"Hello dear {message.from_user.first_name}  **we are currently working on this issue**\n\nPlease try to rename files from your another account.\nBecause this BOT can't rename file sent by some ids.\n\nIf you are an **ADMIN** Don't worry ! here we have a solution for you dear {message.from_user.first_name }.\n\nPlease use \n👉 `/addpremium your_other_userid` 👈 to use premium feautres\n\n",
+        await message.reply_text(text=f"**ʜᴇʟʟᴏ {message.from_user.mention} , \n\nꜱᴏʀʀy ꜰᴏʀ ᴛʜɪꜱ ɪꜱꜱᴜᴇ \nᴡᴇ ᴀʀᴇ ᴄᴜʀʀᴇɴᴛʟy ᴡᴏʀᴋɪɴɢ ᴏɴ ᴛʜɪꜱ ɪꜱꜱᴜᴇ \nᴩʟᴇᴀꜱᴇ ʙᴜy ᴩʀᴇᴍɪᴜᴍ ᴏʀ ʀᴇꜱᴛᴀʀᴛ ʙᴏᴛ \n\nᴜꜱᴇ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ - /restart**",
                                   reply_markup=InlineKeyboardMarkup([
-                                                                     [InlineKeyboardButton("🦋 Contact Developer 🦋", url='https://t.me/Mrkiller_1109')],
-                                                                     [InlineKeyboardButton("🎀 Movies Channel 🎀", url='https://t.me/Movie_Flix_Zone')],
-                                                                     [InlineKeyboardButton("🦋 Update Channel 🦋", url='https://t.me/Hpbot_update'),
-                                                                     InlineKeyboardButton("Support Chat", url='https://t.me/HP_Bot_discuss_group')],
-                                                                     [InlineKeyboardButton("🥺 Donate 🥺", url='https://graph.org/file/31706dbeac09ceb90f8cd.jpg')]
+                                                                     [InlineKeyboardButton("ᴩʀᴇᴍɪᴜᴍ ᴩʟᴀɴꜱ",callback_data = "upgrade")],
+                                                                     [InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url='https://t.me/CrazyXBoTs'),
+                                                                     InlineKeyboardButton("ᴄᴏɴᴛᴀᴄᴛ ᴜꜱ", url='https://t.me/CrazyXBoTsBot?start')],
+                                                                     [InlineKeyboardButton("• ʜᴇʟᴩ •",callback_data = "help")]
                                                                     ]))
         await message.reply_text(text=f"🦋")
         return 
